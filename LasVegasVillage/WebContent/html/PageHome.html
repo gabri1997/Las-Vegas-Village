@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+<title>HomePage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: 'Amaranth';
+}
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #5c2d5b;
+  color: #dcdcdc;
+  font-size: 112%;
+}
+.hover7 img {
+height: 420px;
+width: 730px;
+-webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.hover7 img:hover {
+border: 1px solid #000;
+  border-radius: 11%;
+  width: 800px;
+height: 460px;
+} 
+
+.hover6 img {
+-webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+.hover6 img:hover {
+border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+} 
+.hover5 img {
+margin-top: 10px;
+  -webkit-transition: margin 1s ease;
+     -moz-transition: margin 1s ease;
+       -o-transition: margin 1s ease;
+      -ms-transition: margin 1s ease;
+          transition: margin 1s ease;
+}
+.hover5 img:hover {
+margin-top: -100px;
+} 
+.hover2 img {
+height: 300px;
+width: 300px;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+.hover1 img {
+height: 420px;
+width: 730px;
+-webkit-transition: all 1s ease;
+-moz-transition: all 1s ease;
+-o-transition: all 1s ease;
+-ms-transition: all 1s ease;
+transition: all 1s ease;
+}
+.hover1 img:hover {
+width: 800px;
+height: 460px;
+} 
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 52px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #545454;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  color : #cdcdcd
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color:  #cdcdcd;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color:  black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color:  #dcdcdc;
+}
+
+/* Column container */
+/*COLORE SCRITTE*/
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+   text-align: center;
+   color : #dcdcdc;
+ 
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #181818;
+  padding: 20px;
+  font-family: 'Amaranth';
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color:  #181818;
+  padding: 25px;
+   text-align: center;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #ece68e;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background:  #404441;
+  
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body bgcolor=  white>
+	
+<div class="header">
+  <h1><em>Las Vegas Village</em></h1>
+  <p><em>Web</em> <b>application</b><em> for an arcade.</em></p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active"><em>Home</em></a>
+  <a href="http://localhost:8080/LasVegasVillage/RegistrazioneUtente"><em>Registrazione</em></a>
+  <a href="http://localhost:8080/LasVegasVillage/LoginUtente"><em>Login</em></a>
+    <a href="http://localhost:8080/LasVegasVillage/ContattaAdmin"><em>Contattaci</em></a>
+  <a href="http://localhost:8080/LasVegasVillage/html/Raggiungici.html"><em>Raggiungici</em></a>
+  <a href="#"><em>Statistiche</em></a>
+  <a href="http://localhost:8080/LasVegasVillage/html/index.html" class="right"><em>Admin</em></a>
+</div>
+
+<div class="row">
+  <div class="side">
+  
+    <h1><em>About us</em></h1>
+    
+    <h4><em>Here's the staff:</em></h4>
+    <div  class="hover7">
+    	<img src="C:\Users\Gabriele Saitama\Desktop\staff.jpg" width="800" height="430" >
+    </div>
+    <p><em>Il nostro personale preparato ed altamente qualificato è sempre pronto ad assistervi affinchè i vostri momenti  di gioco  siano sempre  piacevoli. La Sala Giochi Las Vegas Village offre un ambiente tranquillo e piacevole per  ogni vostro momento di gioco.</em></p>
+    
+    <h2><em>Games</em></h2>
+    
+    <h3><em>Abbiamo:</em></h3>
+    
+    <p><em>5 piste da Bowling</em></p>
+    <div class="hover7"><img src="C:\Users\Gabriele Saitama\Desktop\bowling.jpg" width="800" height="430"></div>
+  	<p><em>4 Biliardini</em></p>
+    <div class="hover7"><img src="C:\Users\Gabriele Saitama\Desktop\biliardino.jpg" width="800" height="430"></div>
+	<p><em>4 tavoli da Ping-Pong</em></p>
+    <div class="hover7"><img src="C:\Users\Gabriele Saitama\Desktop\pingpong.jpg"  width="800" height="430"></div>
+  	<p><em>Lasergame per 10 persone</em></p>
+    <div class="hover7"><img src="C:\Users\Gabriele Saitama\Desktop\lasergame.jpg"  width="800" height="430"></div>
+    <p><em>4 tavoli da biliardo</em></p>
+    <div class="hover7"><img src="C:\Users\Gabriele Saitama\Desktop\biliardo.jpg" width="800" height="430"></div>
+    
+  </div>
+  
+  <div class="main">
+    <h1><em>Race Craft</em>
+    </h1>
+    <h4>Saturday fun</h4>
+    <div class="hover7"><img src="C:\Users\Gabriele Saitama\Desktop\racecraft.jpg" width="800" height="430"></div>
+    <p></p>
+    <p><em>Per chi non lo sapesse, Racecraft è un simulatore di corse di Formula Uno originariamente sviluppato da Sandbox Games e attualmente disponibile per il servizio Steam Early Access. Il gioco  consente ai giocatori di personalizzare le loro auto e creare circuiti generati in modo procedurale per gareggiare contro avversari controllati dall’IA.Racecraft Coin-Op promette infinitamente più di quanto ci si possa aspettare da un moderno gioco di guida arcade.</em></p>
+    <br>
+    <h2><em>Flipper Deadpool</em></h2>
+    <h5>Flipper mania</h5>
+    <div class="hover7"><img src="C:\Users\Gabriele Saitama\Desktop\deadpool.jpg" width="800" height="430"></div>
+    <p></p>
+    <p><em>"Deadpool è uno dei personaggi più divertenti e unici della Marvel che sia mai stato creato. Sentiamo che il suo umorismo si adatta perfettamente al flipper e crea un'esperienza di gioco ad alta energia e divertimento".</em></p>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Telephone Number: 059 281491</h2>
+  <h2>Via Emilia EST, 1151, 41122 Modena Mo</h2>
+</div>
+
+</body>
+</html>
+

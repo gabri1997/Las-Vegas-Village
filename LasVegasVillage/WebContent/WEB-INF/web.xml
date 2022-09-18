@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>LasVegasVillage</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Contatti</servlet-name>
+    <servlet-class>salagiochi.Contatti</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Prenotazioni</servlet-name>
+    <servlet-class>salagiochi.Prenotazioni</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Home</servlet-name>
+    <servlet-class>salagiochi.Home</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Contatti</servlet-name>
+    <url-pattern>/Contatti</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Prenotazioni</servlet-name>
+    <url-pattern>/Prenotazioni</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Home</servlet-name>
+    <url-pattern>/Home</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Pagina</display-name>
+    <servlet-name>Pagina</servlet-name>
+    <servlet-class>salagiochi.Home</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Pagina</servlet-name>
+    <url-pattern>/Pagina</url-pattern>
+  </servlet-mapping>
+</web-app>

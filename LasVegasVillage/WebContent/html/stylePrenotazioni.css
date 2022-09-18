@@ -1,0 +1,15 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-image: url(file:///C:/Users/Gabriele%20Saitama/eclipse-workspace/LasVegasVillage/WebContent/html/salagiochi.jpg);
+	background-size: cover;
+	font-family: Comic Sans MS;
+}
+table{
+	border-collapse:collapse
+}
+td, th {
+		border:1px solid #ddd;
+		padding:8px;
+}
